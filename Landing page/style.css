@@ -1,0 +1,157 @@
+:root{
+    --primary-color: #00605f;
+    --secondary-color: #017479;
+    --text-dark: #0f172a;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url("bg.png");
+    background-size: cover;
+    background-position: center center;
+    /* height: 100vh; */
+    padding: 7px;
+    
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(8, 16, 82);
+}
+.search input {
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    border: none;
+}
+.search span {
+    font-size: 1.2rem;
+    position: relative;
+    right: 40px;
+    color: var(--primary-color);
+}
+.login{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login:hover{
+    background-color: var(--secondary-color);
+}
+.login span{
+    padding: 3px 3px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: white;
+    border-radius: 100%;
+}
+/* main */
+.destination{
+    position: relative;
+    padding: 3rem 5rem ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+}
+.social{
+    position: absolute;
+    top: 10rem;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.social span{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.content h1{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(18, 1, 1);
+}
+.content p{
+    width: 350px;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+/* card part */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.card{
+    /* height: 100%; */
+    background-color: white;
+    box-shadow: 2px 2px 20px;
+    transition: all 1s linear 0s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+}
+.card_cont{
+    padding: 1rem;
+}
+.card p{
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    color: white;
+    gap: 10px;
+    backdrop-filter: blur(2px);
+}
